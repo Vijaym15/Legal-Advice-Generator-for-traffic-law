@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Input{% endblock %}
+
+{% block content %}
+
+	<form method="post">
+
+		<div class="mb-3">
+		  <label for="input" class="form-label">Enter your query here:</label>
+		  <textarea class="form-control" id="input" name="input" rows="3"></textarea>
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+
+
+{% endblock %}

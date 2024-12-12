@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Output{% endblock %}
+
+{% block content %}
+    <h1>Conversation</h1>
+    {% for user_msg, bot_resp in chat_history %}
+    <div class="chat-container">
+        <p class="font-weight-bold">User:</p>
+        <p class="user-message">{{ user_msg }}</p>
+        <p class="font-weight-bold">Bot:</p>
+        <p class="bot-message">{{ bot_resp }}</p>
+    </div>
+
+
+    {% endfor %}
+    <a href="/input" class="btn btn-primary">Ask Another Question</a>
+{% endblock %}
